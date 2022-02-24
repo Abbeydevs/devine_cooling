@@ -1,0 +1,459 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;  
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #080240;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.overlay    {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+
+nav.navbar {
+    padding: 1rem 5rem;
+}
+
+header nav a.navbar-brand  {
+    width: 4%;
+}
+
+header nav a img  {
+    width: 60px;
+}
+
+div.mynav ul li a {
+    margin: 0 3rem;
+    color: #3FCDFB;
+}
+
+div.mynav ul li a:hover {
+    color: #F6F6F6;
+}
+
+div.mynav .btn {
+    background-color: #3FCDFB;
+    color: #080240;
+    width: 120px;
+}
+
+div.mynav .btn:hover {
+    background-color: #080240;
+    color: #F6F6F6;
+}
+
+/* Scrolling Effect */
+.scrolling-active   {
+    background-color: #F6F6F6;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.1);   
+}
+
+.scrolling-active .mynav li a{
+    color: #080240;
+}
+
+.scrolling-active .mynav button{
+    background-color: #080240;
+    color: #F6F6F6;
+}
+
+.scrolling-active .mynav li a:hover{
+    color: #3FCDFB;
+}
+
+
+/* Hero */
+#hero   {
+    padding: 8rem 5rem;
+}
+
+#hero .contents {
+    margin-top: 3rem;
+    padding: 0rem 2rem;
+}
+
+#hero .contents p {
+    color: #F6F6F6;
+    font-size: 4.5rem;
+}
+
+#hero .contents button {
+    margin: 1rem 0;
+    width: 300px;
+    background-color: #3FCDFB;
+}
+
+#hero .contents button:hover {
+    background-color: #080240;
+    color: #F6F6F6;
+}
+
+.form-container {
+    width: 80%;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.form-container h3  {
+    text-align: center;
+    color: #080240;
+}
+
+form    {
+    display: block;
+    padding: 1rem;
+}
+
+
+.couple, .coup-2{
+    display: flex;
+    margin: 0.5rem auto;
+}
+
+form input {
+    display: block;
+    background-color: #E5E5E5;
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px 10px;
+    border: none;
+}
+
+.fname, .lname   {
+    margin-right: 1rem;
+}
+
+select  {
+    width: 100%;
+    background-color: #E5E5E5;
+    border-radius: 4px;
+    border: none;
+    padding: 7px;
+}
+
+.subject{
+    margin: 0.6rem 0;
+}
+
+.text-area  {
+    width: 100%;
+    border: none;
+    padding: 0.6rem;
+    background-color:#E5E5E5;
+    border-radius: 4px;
+}
+
+.hero-form button{
+    margin-top: 0.5rem;
+    width: 10rem;
+    background-color: #3FCDFB;
+}
+
+.hero-form button:hover {
+    background-color: #080240;
+    color: #F6F6F6;
+}
+
+/* Video Section */
+/* #vid-container  {
+    padding: 6rem;
+}
+
+.vid-left video  {
+    width: 50%;
+} */
+
+
+/* Services Section */
+
+#service    {
+    background-color: #F6F6F6;
+    padding: 4rem;
+}
+
+#service h3{
+    font-weight: 600;
+    color: #080240;
+}
+
+#service img   {
+    position: absolute;
+    right: 65rem;
+    top: 50rem;
+}
+
+.service-title  {
+    font-weight: 700;
+    color:#080240;
+}
+
+.service-col    {
+    padding: 2rem 0;
+}
+
+.sale, .install, .consultancy, .design  {
+    z-index: 2;
+}
+
+.s-container, .i-container, .c-container, .d-container    {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 5px 10px 15px 5px #ccc;;
+}
+
+.s-container button, .i-container button, .c-container button, .d-container button {
+    background-color: #080240;
+    color: #F6F6F6;
+}
+
+.s-container button:hover, .i-container button:hover, .c-container button:hover, .d-container button:hover {
+    background-color: #1908b8;
+    color: #F6F6F6;
+}
+
+/* Gallery */
+
+#gallery    {
+   padding: 3rem 4rem;
+}
+
+#gallery img {
+    width: 95%;
+    cursor: pointer;
+ }
+
+.image-gallery  {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#second-row {
+    display: none;
+}
+
+.gallery-btn    {
+    background-color: #080240;
+    color: #F6F6F6;
+    margin: 2rem auto;
+    width: 20%;
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* About Us */
+#about_us   {
+    padding: 4rem;
+    background-color: #9AE6FF;
+}
+
+.left-container p{
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.left-container button{
+    background-color: #080240;
+    color: #F6F6F6;
+}
+
+.right-container    {
+    width: 50%;
+}
+
+.right-container img {
+    width: 90%;
+}
+
+/* Contact */
+
+#contact    {
+    padding: 4rem;
+    background-image: url(/images/contact_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.get_in_touch   {
+    font-size: 1.5rem;
+}
+
+.get_in_touch h1 {
+    padding: 2rem 0;
+}
+
+.get_in_touch p, .get_in_touch a {
+    color: #080240;
+    text-decoration: none;
+}
+
+.subscribe  {
+    text-align: center;
+    border: 1px solid #D6D6D6;
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.subscribe  form {
+    padding: 0.5rem 3rem 2rem;
+}
+
+.subscribe form input {
+    margin: 1rem 0;
+}
+
+form button {
+    text-align: left;
+    background-color: #080240;
+    color: #F6F6F6;
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer img  {
+    width: 100px;
+    margin:1rem 0;
+}
+
+#footer {
+    padding: 4rem;
+}
+
+.footer-txts    {
+    font-size: 1.5rem;
+    color: #080240;
+    font-weight: 600;
+}
+
+.comp-container ul, .prod-container ul{
+    padding: 0.5rem;
+}
+
+.comp-container ul li, .prod-container ul li {
+    list-style-type: none;
+}
+
+.comp-container ul li a, .prod-container ul li a {
+    color: #080240;
+}
+
+.copyright  {
+    margin: 3rem 0 0;
+    text-align: left;
+    width: 30%;
+}
+
+
+
+/* ABOUT US PAGE */
+
+#abt-hero   {
+    padding: 12rem 5rem;
+    background-image: url(/images/abt-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+h1.abt-title  {
+     color: #F6F6F6;
+}
+
+#who_we_are {
+    padding: 4rem;
+}
+
+#who_we_are h1 {
+    padding: 1rem 0;
+}
+
+#who_we_are p {
+    color: #080240;
+    font-size: 1.5rem;
+}
+
+#mission  {
+    background-color: #CDC7FF;
+    padding: 4rem;
+}
+
+#mission p {
+    font-size: 1.5rem;
+    color: #080240;
+}
+
+.our-vision {
+    margin: 5rem 0 0;
+}
+
+#core-values    {
+    padding: 4rem;
+}
+
+#core-values ul  {
+    padding: 1rem;
+}
+
+#core-values ul li {
+    font-size: 1.5rem;
+    color: #080240;
+}
+
+/* Reviews */
+#reviews    {
+    padding: 4rem;
+    background-color: #9AE6FF;
+}
+
+#reviews h1 {
+    margin-bottom: 4rem;
+}
+
+.omoyeni .container, .ajala .container, .niyi .container{
+    background-color: #F6F6F6;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: #080240;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.omoyeni .container p.name, .ajala .container p.name, .niyi .container p.name{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+#reviews button {
+    background-color: #080240;
+    color: #F6F6F6;
+}
