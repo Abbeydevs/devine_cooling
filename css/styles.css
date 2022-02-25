@@ -377,7 +377,7 @@ footer img  {
 
 /* ABOUT US PAGE */
 
-#abt-hero   {
+#abt-hero  {
     padding: 12rem 5rem;
     background-image: url(/images/abt-bg.png);
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ footer img  {
     text-align: center;
 }
 
-h1.abt-title  {
+h1.abt-title {
      color: #F6F6F6;
 }
 
@@ -456,4 +456,60 @@ h1.abt-title  {
 #reviews button {
     background-color: #080240;
     color: #F6F6F6;
+}
+
+
+/* PRODUCT PAGE */
+
+#prod-hero {
+    padding: 12rem 5rem;
+    background-color: #8e86db;
+    text-align: center;
+}
+
+h1.prod-title {
+    color: #080240;
+}
+
+#products, #product2, #product3, #product4, #product5  {
+    padding: 4rem;
+}
+
+.chiller p  {
+    color: #080240;
+    font-size: 1rem;
+}
+
+.chiller button.price-btn {
+    color: #F6F6F6;
+    background-color: #080240;
+    width: 20%;
+    margin: 1rem 1rem 0 0;
+}
+
+.chiller button.price-btn:hover {
+    color: #F6F6F6;
+    background-color: #3FCDFB;
+}
+
+.chiller button.lm-btn {
+    color: #080240;
+    background-color: transparent;
+    border: 1px solid #080240;
+    width: 20%;
+    margin: 1rem 1rem 0 0;
+}
+
+.chiller button.lm-btn:hover {
+    color: #f6f6f6;
+    background-color: #080240;
+}
+
+.chiller-img {
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.chiller-img img {
+    width: 70%;
 }
