@@ -513,3 +513,29 @@ h1.prod-title {
 .chiller-img img {
     width: 70%;
 }
+
+
+/* SERVICE PAGE */
+
+#service_pg {
+    padding: 4rem;
+}
+
+#service_pg p {
+    color: #080240;
+}
+
+#service_pg button {
+    background-color: #080240;
+    color: #F6F6F6;
+    width: 10%;
+    margin: 1rem 0 0;
+}
+
+.service-sales, .service-installation, .service-consult, .service-design  {
+    margin-bottom: 4rem;
+    background-color: #F6F6F6;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.3); 
+}
