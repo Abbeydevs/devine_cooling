@@ -47,7 +47,7 @@ header nav a img  {
 
 div.mynav ul li a {
     margin: 0 3rem;
-    color: #3FCDFB;
+    color: #F6F6F6;
 }
 
 div.mynav ul li a:hover {
@@ -225,7 +225,7 @@ select  {
     padding: 30px;
     border-radius: 10px;
     margin: 10px 0;
-    box-shadow: 5px 10px 15px 5px #ccc;;
+    box-shadow: 5px 10px 15px 5px #ccc;
 }
 
 .s-container button, .i-container button, .c-container button, .d-container button {
@@ -241,12 +241,43 @@ select  {
 /* Gallery */
 
 #gallery    {
-   padding: 3rem 4rem;
+    background-color: #aaa;
+    padding: 3rem 4rem;
 }
 
+.carousel   {
+    padding: 100px 50px;
+}
+
+.carousel-indicators li{
+    background-color: #080240;
+}
+
+.carousel-indicators li.active{
+    background-color: #1908b8;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    right: 5rem;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    left: 5rem;
+}
+
+/* #gallery .img-container1, #gallery .img-container2 {
+    padding: 100px;
+    text-align: center;
+} */
+
 #gallery img {
-    width: 95%;
+    width: 25%;
     cursor: pointer;
+    text-align: center;
+    border: 5px solid #ccc;
+    border-radius: 25px;
  }
 
 .image-gallery  {

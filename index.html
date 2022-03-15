@@ -32,7 +32,8 @@
                 <div class="mynav collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="https://devinecooling.netlify.app/">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="https://devinecooling.netlify.app/">Home <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://devinecooling.netlify.app/products.html">Products</a>
@@ -56,7 +57,7 @@
                     </div>
                     <div class="form-container col-lg-5">
                         <h3 class="form-title">Send us a Quote</h3>
-                        <form class="hero-form" action="mailto:abbey.developer@gmail.com" method="post">
+                        <form class="hero-form" action="https://formspree.io/f/mlezlgyj" method="POST">
                             <div class="couple">
                                 <input class="fname" type="text" name="fname" placeholder="First name" required>
                                 <input type="text" name="lname" placeholder="Last name" required>
@@ -66,7 +67,8 @@
                                 <input type="tel" name="phone" placeholder="Your phone number" required>
                             </div>
                             <select name="products" id="products" autofocus required>
-                                <option value="Choose products/Services">--Choose products/Services--</option>
+                                <option value="Choose products/Services" selected disabled>Choose products/Services
+                                </option>
                                 <option value="Consultation">Consultation</option>
                                 <option value="Sales">Sales</option>
                                 <option value="Insatallation">Insatallation</option>
@@ -146,8 +148,80 @@
     </section>
 
     <section id="gallery">
-        <h1>Gallery</h3>
-            <div class="row first-row">
+        <h1>Projects</h3>
+
+            <!-- Bootstrap Carousel for projects -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="first-slide">
+                        <h3 class="carousel-title">The Blastroom</h3>
+                        <div class="row">
+                            <div class="img-container1 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_1.png" alt="First slide">
+                            </div>
+                            <div class="img-container2 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_2.png" alt="second slide">
+                            </div>
+                            <div class="img-container2 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_3.png" alt="second slide">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <h3 class="carousel-title">The Coldroom</h3>
+                        <div class="row">
+                            <div class="img-container1 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_4.png" alt="First slide">
+                            </div>
+                            <div class="img-container2 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_5.png" alt="second slide">
+                            </div>
+                            <div class="img-container2 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_6.png" alt="second slide">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third slide -->
+                    <div class="carousel-item">
+                        <h3 class="carousel-title">The Coldroom</h3>
+                        <div class="row">
+                            <div class="img-container1 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_7.png" alt="First slide">
+                            </div>
+                            <div class="img-container2 col-lg-4 col-md-12 col-sm-12">
+                                <img class="d-block w-100" src="images/gallery/mt_8.png" alt="second slide">
+                            </div>
+                            <div class="img-container2 col-lg-4 col-md-12 col-sm-12">
+                                <!-- <img class="d-block w-100" src="images/gallery/mt_.png" alt="second slide"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+
+
+            <!-- Former design | Might come back here later -->
+            <!-- <div class="row first-row">
                 <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
                     <img src="images/gallery/mt_1.png" alt="">
                 </div>
@@ -174,9 +248,7 @@
                 <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
                     <img src="images/gallery/mt_8.png" alt="">
                 </div>
-                </div>
-
-                <button class="btn gallery-btn">Load more pictures</button>
+                </div> -->
     </section>
 
     <section id="about_us">
