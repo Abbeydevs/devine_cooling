@@ -184,6 +184,7 @@ div.mynav .btn:hover {
     margin-top: 0.5rem;
     width: 10rem;
     background-color: #080240;
+    color: #F6F6F6;
 }
 
 .hero-form button:hover {
@@ -285,12 +286,26 @@ div.mynav .btn:hover {
     color: #fff;
 }
 
-#gallery #first-slide img, #gallery #second-slide img, #gallery #third-slide img {
+#gallery #first-slide img {
     width: 50% !important;
     margin: auto;
     cursor: pointer;
     text-align: center;
  }
+
+ #gallery #second-slide img {
+    width: 50% !important;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+#gallery #third-slide img {
+    width: 50% !important;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+}
 
 .image-gallery  {
     margin: 1rem auto;
@@ -313,7 +328,7 @@ div.mynav .btn:hover {
 
 /* About Us */
 #about_us   {
-    padding: 4rem;
+    padding: 6rem 4rem;
     background-color: #9AE6FF;
 }
 
@@ -365,19 +380,22 @@ div.mynav .btn:hover {
     background-color: #fff;
 }
 
-.subscribe  form {
+.subscribe form {
     padding: 0.5rem 3rem 2rem;
 }
 
 .subscribe form input {
     margin: 1rem 0;
+    width: 100%;
+    padding: 0.3rem 1rem;
 }
 
-form button {
-    text-align: left;
+.subscribe form button {
+    text-align: center;
     background-color: #080240;
     color: #F6F6F6;
     width: 100%;
+    padding: 0.7rem 1rem;
 }
 
 
