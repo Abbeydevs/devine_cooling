@@ -15,6 +15,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 
 <body>
@@ -30,7 +31,9 @@
                 <a class="navbar-brand" href="https://www.devinecooling.com.ng">
                     <img src="images/logo.png" alt="Devine Cooling company logo">
                 </a>
-
+                
+                <!-- Open SIdebar Icon -->
+                <i class="fa-solid fa-bars" id="sidebar-openIcon"></i>
                 <div class="mynav collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
@@ -91,6 +94,21 @@
 
 
     </header>
+
+
+    <!-- SIDE BAR -->
+    <section id="side-bar">
+        <i class="fa-solid fa-xmark" id="sidebar-closeIcon"></i>
+        <div class="side-bar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#"><button type="button" class="btn">Book now</button></a>
+        </div>
+    </section>
 
     <!-- <section id="vid-container">
         <div class="row">
