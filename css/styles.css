@@ -146,11 +146,11 @@ div.mynav .btn:hover {
 
 /* Hero */
 #hero   {
-    padding: 8rem 5rem;
+    padding: 8rem 4rem;
 }
 
 #hero .contents {
-    margin-top: 0.5rem;
+    margin: 6rem 0;
     padding: 0rem 2rem;
 }
 
