@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Quote | DevineCooling</title>
+
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/17af928c5f.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+  </head>
+
+  <body>
+    <div class="row">
+        <div class="quote-left-container col-lg-5">
+            <div class="left-contents">
+            <h1>Request a Quote</h1>
+            <p>
+                We are Devine Cooling. We build Cooling machines and install them
+                for cold-room businesses. We also give advice on how to manage a
+                cold room business effectively. At Devine Cooling, customer
+                satisfaction is our top priority.
+            </p>
+            <button class="btn">Go back home</button>
+            </div>
+        </div>
+
+        <!-- Right Container -->
+        <div class="quote-right-container col-lg-7">
+            <div class="req-quote-form">
+                <h1>Request a Quote</h1>
+                <form action="" method="POST">
+
+                    <div class="first-row">
+                      <div class="first-name">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" placeholder="Your First name" required>
+                      </div>
+
+                      <div class="last-name">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" placeholder="Your Last name" required>
+                      </div>
+                    </div>
+
+                    <div class="sec-row">
+
+                      <div class="email-add">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                      </div>
+
+                      <div class="tel">
+                        <label for="num">Phone number</label>
+                        <input type="tel" name="num" placeholder="Enter phone number" required>
+                      </div>
+
+                    </div>
+
+                    <div class="third-row">
+
+                      <div class="state">
+                        <label for="state">State</label>
+                        <div class="select-container">
+                            <select name="state" id="state">
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="Akwa">Akwa Ibom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross-River">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="FCT">Federal Capital Territory</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="country">
+                        <label for="country">Country</label>
+                        <div class="select-container">
+                            <select name="country" id="country">
+                                <option value="Algeria">Algeria</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="BurkinaFaso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="car">Central African Republic (CAR)</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="congo">Congo, Democratic Republic of the</option>
+                                <option value="congo">Congo, Republic of the</option>
+                                <option value="ivory-coast">Cote d'Ivoire</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="EquatorialGuinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Eswatini">Eswatini</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value=Niger">Niger</option>
+                                <option value=Nigeria" selected>Nigeria</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="stap">Sao Tome and Principe</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="Sm">Somalia</option>
+                                <option value="SA">South Africa</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="services">
+                      <label for="service">Choose a Service</label>
+                      <div class="select-container">
+                          <select name="services" id="services">
+                              <option value="choose" selected disabled>Choose Products/Services</option>
+                              <option value="consultation">Consultation</option>
+                              <option value="design">Design needs</option>
+                              <option value="SI">Sales & Installation</option>
+                              <option value="others">Others</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    <div class="message-area">
+                      <label for="message">Message</label>
+                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Type here..."></textarea>
+                    </div>
+
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

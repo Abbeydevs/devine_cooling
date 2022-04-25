@@ -391,21 +391,21 @@ div.mynav .btn:hover {
     background-color: #9AE6FF;
 }
 
-.left-container p {
+#about_us .left-container p {
     font-size: 1.5rem;
     padding: 10px 0;
 }
 
-.left-container button{
+#about_us .left-container button{
     background-color: #080240;
     color: #F6F6F6;
 }
 
-.right-container    {
+#about_us .right-container    {
     width: 50%;
 }
 
-.right-container img {
+#about_us .right-container img {
     width: 90%;
 }
 
@@ -658,4 +658,125 @@ h1.prod-title {
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 3px 1rem rgba(0,0,0,0.3); 
+}
+
+
+
+
+/* QUOTE CSS */
+.quote-left-container {
+    background-image: url(/images/quote-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 5rem;
+    position: fixed;
+}
+
+.quote-left-container .left-contents {
+    padding: 4rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.quote-left-container .left-contents h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.quote-left-container .left-contents p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.quote-left-container .left-contents button.btn {
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 1px 1px 20px #080240;
+}
+
+
+/* RIGHT CONTAINER */
+.quote-right-container    {
+    padding: 2rem 4rem;
+    margin-left: 35rem;
+}
+
+.req-quote-form h1{
+    padding-bottom: 2rem;
+}
+
+.req-quote-form form label{
+    display: block;
+    font-weight: 600;
+    color: #080240;
+}
+
+.req-quote-form form input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.req-quote-form form .first-row, .sec-row, .third-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.req-quote-form form .first-row .first-name, .first-row .last-name, 
+.sec-row .email-add, .sec-row .tel, .third-row .state, .third-row .country {
+    width: 100%;
+}
+
+.req-quote-form form .first-row .first-name input, 
+.first-row .last-name input, .sec-row .email-add input, 
+.sec-row .tel input, .third-row .state select, .third-row .country select  {
+    padding: 0.6rem;
+    width: 95%;
+}
+
+/* Selelct Container */
+
+form .select-container select {
+    border: 0;
+    padding: 0.6rem;
+    width: 97%;
+}
+
+form .select-container {
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form .select-container select {
+    outline: 0;
+}
+
+form .services .select-container {
+    width: 98%;
+}
+
+form .message-area  {
+    margin-top: 3rem;
+}
+
+form .message-area textarea {
+    width: 98%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.req-quote-form form button.btn {
+    margin: 1rem 0;
+    background-color: #080240;
+    color: #fff;
+    width: 30%;
+    padding: 1rem;
 }
