@@ -185,8 +185,12 @@
         top: 60rem;
     }
 
+    #about_us .left-container p {
+        font-size: 1rem;
+    }
+
     .get_in_touch   {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         padding-top: 3rem;
     }
 }
