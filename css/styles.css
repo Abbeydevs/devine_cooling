@@ -708,6 +708,7 @@ h1.prod-title {
     background-position: center;
     padding: 3rem 5rem;
     position: fixed;
+    height: 100vh;
 }
 
 .quote-left-container .left-contents {
