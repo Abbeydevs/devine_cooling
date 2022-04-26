@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devine Cooling Coldroom</title>
 
+    <!-- Animation from AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/17af928c5f.js" crossorigin="anonymous"></script>
 
@@ -22,10 +25,6 @@
     <!-- This is the header -->
     <header class="banner">
         <div class="overlay">
-
-            <!-- <div>
-                <img src="images/img1.jpg" id="slideImg">
-            </div> -->
 
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand" href="quote-req.html">
@@ -56,7 +55,7 @@
 
             <div id="hero">
                 <div class="row">
-                    <div class="contents col-lg-7">
+                    <div class="contents col-lg-7" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="2000">
                         <p class="hero-title">Invest in <strong>Cold room</strong> business with <strong>Devine Cooling.</strong></p>
                         <p class="hero-paragraph">We are Devine Cooling. We build Cooling machines and install them for cold-room businesses. We also give
                             advice on how to manage a cold room business effectively. At Devine Cooling, customer satisfaction is our
@@ -129,7 +128,7 @@
         <h1 class="service-title">Services</h1>
         <div class="row service-col">
             <div class="sale col-lg-4 col-md-6 col-sm-12">
-                <div class="s-container">
+                <div class="s-container" data-aos="fade-up" data-aos-duration="1000">
                     <h3>Sales</h3>
                     <p>We sell and build machines for cold room business. If you are looking into investing in the cold
                         room
@@ -140,7 +139,7 @@
                 </div>
             </div>
             <div class="install col-lg-4 col-md-6 col-sm-12">
-                <div class="i-container">
+                <div class="i-container" data-aos="fade-up" data-aos-duration="3000">
                     <h3>Installation</h3>
                     <p>We can help you install your machines or if you want us to help build and install, We are the
                         plug.
@@ -151,7 +150,7 @@
                 </div>
             </div>
             <div class="consultancy col-lg-4 col-md-6 col-sm-12">
-                <div class="c-container">
+                <div class="c-container" data-aos="fade-up" data-aos-duration="3000">
                     <h3>Consultancy</h3>
                     <p>At Devine Cooling, we are concerned about the success of our esteemed clients/customers. We offer
                         the
@@ -160,7 +159,7 @@
                 </div>
             </div>
             <div class="design col-lg-4 col-md-6 col-sm-12">
-                <div class="d-container">
+                <div class="d-container" data-aos="fade-up" data-aos-duration="2000">
                     <h3>Design</h3>
                     <p>At Devine Cooling, we are concerned about the success of our esteemed clients/customers. We offer
                         the
@@ -175,8 +174,7 @@
 
     <!-- Projects or Gallery -->
     <section id="gallery">
-        <h1>Projects</h3>
-
+            <!-- <h1>Projects</h1> -->
             <!-- Bootstrap Carousel for projects -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -186,25 +184,25 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active" id="first-slide">
-                        <h3 class="carousel-title">The Blastroom</h3>
-                            <div class="img-container2">
-                                <img class="d-block w-100" src="images/gallery/mt_3.png" alt="second slide">
+                        <h1 class="carousel-title">The Coldroom</h1>
+                            <div id="img-container1" onClick="openFirstModal()">
+                                <img class="d-block w-100 openModal" src="/images/projects/project-img1.png" alt="First slide">
                             </div>
                     </div>
 
                     <!-- Second slide -->
                     <div class="carousel-item" id="second-slide">
-                        <h3 class="carousel-title">The Coldroom</h3>
-                            <div class="img-container1">
-                                <img class="d-block w-100" src="images/gallery/mt_4.png" alt="First slide">
+                        <h1 class="carousel-title">The Coldroom</h1>
+                            <div id="img-container2">
+                                <img  onClick="openFirstModal()" class="d-block w-100" src="/images/projects/project-img2.png" alt="Second slide">
                             </div>
                     </div>
 
                     <!-- Third slide -->
                     <div class="carousel-item" id="third-slide">
-                        <h3 class="carousel-title">The Coldroom</h3>
-                            <div class="img-container1">
-                                <img class="d-block w-100" src="images/gallery/mt_7.png" alt="First slide">
+                        <h1 class="carousel-title">The Coldroom</h1>
+                            <div id="img-container3">
+                                <img class="d-block w-100" src="/images/projects/project-img3.png" alt="third slide">
                             </div>
                     </div>
                 </div>
@@ -219,52 +217,94 @@
                 </a>
             </div>
 
+    </section>
 
+    <!-- The first slide Modal -->
+    <section id="first-slide-modal">
+        <i class="fa-solid fa-xmark" id="fsm-modal-close" onClick="closeFirstModal()"></i>
+        <div class="fsm-bg">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="first-slide">
+                        <!-- <h1 class="carousel-title">The Coldroom</h1> -->
+                            <div class="img-container2">
+                                <img class="d-block w-100" src="/images/projects/project-img1.png" alt="second slide">
+                            </div>
+                    </div>
 
+                    <!-- Second slide -->
+                    <div class="carousel-item" id="second-slide">
+                        <!-- <h1 class="carousel-title">The Coldroom</h1> -->
+                            <div class="img-container1">
+                                <img class="d-block w-100" src="/images/projects/project-img2.png" alt="First slide">
+                            </div>
+                    </div>
 
-
-            <!-- Former design | Might come back here later -->
-            <!-- <div class="row first-row">
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_1.png" alt="">
+                    <!-- Third slide -->
+                    <div class="carousel-item" id="third-slide">
+                        <!-- <h1 class="carousel-title">The Coldroom</h1> -->
+                            <div class="img-container1">
+                                <img class="d-block w-100" src="/images/projects/project-img3.png" alt="First slide">
+                            </div>
+                    </div>
                 </div>
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_2.png" alt="">
+<!-- 
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> 
+            
+-->
+
+
+            </div>
+            <div class="fsm-texts">
+                <div class="fsm-texts-title">
+                    <h3>Alpa Project</h3>
+                    <p>Lagos, 2010</p>
                 </div>
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_3.png" alt="">
-                </div>
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_4.png" alt="">
+                <div class="fsm-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
+                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
+                        velit voluptatum ea tempora.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
+                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
+                        velit voluptatum ea tempora.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
+                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
+                        velit voluptatum ea tempora.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
+                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
+                        velit voluptatum ea tempora.
+                    </p>
+                    <p><strong>Project Supervisor: Devine Cooling</strong></p>
+        
                 </div>
             </div>
-            <div class="row" id="second-row">
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_5.png" alt="">
-                </div>
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_6.png" alt="">
-                </div>
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_7.png" alt="">
-                </div>
-                <div class="image-gallery col-lg-3 col-md-6 col-sm-12">
-                    <img src="images/gallery/mt_8.png" alt="">
-                </div>
-                </div> -->
+        </div>
     </section>
 
     <!-- About us Section -->
     <section id="about_us">
         <div class="row">
-            <div class="left-container col-lg-7 col-md-6 col-sm-12">
+            <div class="left-container col-lg-7 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-duration="3000">
                 <h1>About Us</h1>
                 <p>We are Devine Cooling. We build Cooling machines and install them for cold-room businesses. We also
                     give advice on how to manage a cold room business effectively. At Devine Cooling, customer
                     satisfaction is our top priority. </p>
                 <button class="btn">Learn more</button>
             </div>
-            <div class="right-container col-lg-5 col-md-6 col-sm-12">
+            <div class="right-container col-lg-5 col-md-6 col-sm-12"data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="images/abt-img.png" alt="">
             </div>
         </div>
@@ -336,6 +376,10 @@
 
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="js/index.js"></script>
 

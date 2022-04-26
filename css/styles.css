@@ -316,6 +316,10 @@ div.mynav .btn:hover {
     padding: 3rem 4rem;
 }
 
+#gallery  h1  {
+    text-align: center;
+}
+
 #gallery .carousel   {
     padding: 100px 50px;
 }
@@ -345,25 +349,12 @@ div.mynav .btn:hover {
     color: #fff;
 }
 
-#gallery #first-slide img {
-    width: 50% !important;
+#gallery #first-slide img, #gallery #second-slide img, #gallery #third-slide img {
+    width: 80% !important;
     margin: auto;
     cursor: pointer;
     text-align: center;
- }
-
- #gallery #second-slide img {
-    width: 50% !important;
-    margin: auto;
-    cursor: pointer;
-    text-align: center;
-}
-
-#gallery #third-slide img {
-    width: 50% !important;
-    margin: auto;
-    cursor: pointer;
-    text-align: center;
+    border-radius: 10px;
 }
 
 .image-gallery  {
@@ -384,6 +375,52 @@ div.mynav .btn:hover {
     display: flex;
     justify-content: center;
 }
+
+
+/* The MODAL FOR GALLERY OR PROJECT WHATEVER WE WILL CALL IT */
+#first-slide-modal {
+    display: none;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    padding: 7rem 5rem;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: all ease 1000s;
+}
+
+#first-slide-modal .fsm-bg {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5rem;
+}
+
+#first-slide-modal .fsm-bg img {
+   width: 100% !important;
+   text-align: center;
+   margin: auto;
+   border-radius: 10px;
+}
+
+#first-slide-modal .fsm-texts  {
+    margin-top: 3rem;
+}
+
+#fsm-modal-close {
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
 
 /* About Us */
 #about_us   {
