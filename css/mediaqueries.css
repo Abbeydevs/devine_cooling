@@ -115,6 +115,7 @@
     }
 
     .form-container {
+        display: none;
         position: unset;  
         width: 80%;
         padding: 2rem;
@@ -124,10 +125,6 @@
     .hero-form button{
         margin-top: 0.8rem;
         width: 100%;
-    }
-
-    #service    {
-        padding-top: 200rem;
     }
 
     #service img   {
