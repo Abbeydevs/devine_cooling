@@ -18,8 +18,9 @@
     }
 
     #hero .contents {
-        margin-top: 3rem;
-        padding: 0rem 1rem;
+        width: 55%;
+        margin: 0;
+        padding: 0rem 2rem;
     }
 
     #hero .contents p.hero-title {
@@ -29,6 +30,9 @@
 
     .form-container {
         padding: 2rem 0.51rem;
+        position: absolute;
+        top: 10rem;
+        left: 35rem;
     }
 
     #service img   {
@@ -36,17 +40,44 @@
         top: 55rem;
     }
 
-    .left-container p{
-        font-size: 1rem;
+    #gallery #first-slide img, #gallery #second-slide img, #gallery #third-slide img {
+        width: 100% !important;
     }
 
-    .get_in_touch   {
-        font-size: 1.2rem;
+    #gallery #first-slide h1.carousel-title,
+    #gallery #second-slide h1.carousel-title,
+    #gallery #third-slide h1.carousel-title {
+        /* font-size: 2rem; */
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        margin: auto;
+        text-align: center;
     }
+
+    /* .left-container p{
+        font-size: 10rem;
+    } */
 
     /* CONTACT */
+    
+    .get_in_touch   {
+        max-width: 100%;
+        font-size: 1.3rem;
+        padding-right: 1rem;
+    }
+
+    .get_in_touch p {
+        padding-right: 1rem;
+    }
+
+
+    .subscribe  {
+        max-width: 40%;
+    }
+
     .subscribe form {
-        padding: 0.5rem 0;
+        padding: 0.9rem 0;
     }
     
     .subscribe form button {
@@ -55,8 +86,17 @@
 }
 
 @media screen and (max-width: 970px) {
+
+    header nav a img  {
+        width: 90px;
+        padding-left: 3rem;
+    }
+
     #sidebar-openIcon   {
         display: block;
+        position: relative;
+        top: 0.52rem;
+        right: 5rem;
     }
 
     #hero   {
@@ -65,7 +105,7 @@
     }
 
     #hero .contents {
-        width: 70%;
+        width: 90%;
         margin: auto;
     }
 
@@ -75,8 +115,9 @@
     }
 
     .form-container {
-        width: 70%;
-        padding: 2rem 0.51rem;
+        position: unset;  
+        width: 80%;
+        padding: 2rem;
         margin: 5rem auto;
     }
 
@@ -90,8 +131,25 @@
         top: 100rem;
     }
 
+    #gallery #first-slide h1.carousel-title,
+    #gallery #second-slide h1.carousel-title,
+    #gallery #third-slide h1.carousel-title {
+        top: 42%;
+        left: 30%;
+    }
+    
+    #about_us .right-container img {
+        margin: 3rem 0 0 3rem;
+    }
+
     .get_in_touch   {
-        font-size: 1rem;
+        max-width: 100%;
+        font-size: 1.3rem;
+        padding-right: 1rem;
+    }
+
+    .get_in_touch p {
+        padding-right: 1rem;
     }
 
     .footer-txts    {

@@ -32,7 +32,7 @@
                 </a>
                 
                 <!-- Open SIdebar Icon -->
-                <i class="fa-solid fa-bars" id="sidebar-openIcon"></i>
+                <i class="fa-solid fa-bars" id="sidebar-openIcon" onclick="openSideBar();"></i>
                 <div class="mynav collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
@@ -54,15 +54,16 @@
             </nav>
 
             <div id="hero">
-                <div class="row">
-                    <div class="contents col-lg-7" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="2000">
+                <div class="">
+                    <div class="contents" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="2000">
                         <p class="hero-title">Invest in <strong>Cold room</strong> business with <strong>Devine Cooling.</strong></p>
                         <p class="hero-paragraph">We are Devine Cooling. We build Cooling machines and install them for cold-room businesses. We also give
                             advice on how to manage a cold room business effectively. At Devine Cooling, customer satisfaction is our
                             top priority.</p>
                         <a href="quote-req.html"><button type="button" class="btn">Book for Consultation</button></a>
                     </div>
-                    <div class="form-container col-lg-5">
+
+                    <div class="form-container">
                         <h3 class="form-title">Request a Quote</h3>
                         <form class="hero-form" action="https://formspree.io/f/mlezlgyj" method="POST">
                             <div class="couple">
@@ -97,7 +98,7 @@
 
     <!-- SIDE BAR -->
     <section id="side-bar">
-        <i class="fa-solid fa-xmark" id="sidebar-closeIcon"></i>
+        <i class="fa-solid fa-xmark" id="sidebar-closeIcon" onclick="closeSideBar()"></i>
         <div class="side-bar-links">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -131,10 +132,8 @@
                 <div class="s-container" data-aos="fade-up" data-aos-duration="1000">
                     <h3>Sales</h3>
                     <p>We sell and build machines for cold room business. If you are looking into investing in the cold
-                        room
-                        business or you want to process birds such as; Chicken, Turkey etc, We are the right plug for
-                        sales
-                        and building of machines.</p>
+                        room business or you want to process birds such as; Chicken, Turkey etc, We are the right plug for
+                        sales and building of machines.</p>
                     <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
                 </div>
             </div>
@@ -312,7 +311,7 @@
 
     <section id="contact">
         <div class="row">
-            <div class="get_in_touch col-lg- 6 col-md-6 col-sm-12">
+            <div class="get_in_touch col-lg-7 col-md-6 col-sm-12">
                 <h1>Get in touch</h1>
                 <p><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; John doe str, Lekki phase 1, Lagos, Nigeria
                 </p>
@@ -320,7 +319,7 @@
                 <p><i class="fa-solid fa-phone"></i> <a href="#"> &nbsp;&nbsp; +2347010111213</a></p>
                 <p><i class="fa-solid fa-repeat"></i> &nbsp;&nbsp; 9:00am - 6:00am</p>
             </div>
-            <div class="subscribe col-lg- 6 col-md-6 col-sm-12">
+            <div class="subscribe col-lg-5 col-md-6 col-sm-12">
                 <h3>Subscribe to our Newsletter</h3>
                 <p>Subscribe to get updates on our products and sales. We will not send you updates you don’t subscribe
                     for.</p>
@@ -348,8 +347,6 @@
                 <h3>Company</h3>
                 <ul>
                     <li><a href="">FAQ</a></li>
-                    <li><a href="">Book now</a></li>
-                    <li><a href="">Price List</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Terms</a></li>
                     <li><a href="">Privacy Policy</a></li>

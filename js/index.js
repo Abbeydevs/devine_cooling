@@ -10,6 +10,8 @@ window.addEventListener('scroll', function () {
 
 const openFirstSlideModal = document.getElementById("first-slide-modal");
 const closeFirstSlideModal = document.getElementById("first-slide-modal");
+const openSideBarMenu = document.getElementById("side-bar");
+const closeSideBarMenu = document.getElementById("side-bar");
 
 function openFirstModal() {
     openFirstSlideModal.style.display = "block";
@@ -17,4 +19,12 @@ function openFirstModal() {
 
 function closeFirstModal() {
     closeFirstSlideModal.style.display = "none";
+}
+
+function openSideBar() {
+    openSideBarMenu.style.display = "block";
+}
+
+function closeSideBar() {
+    closeSideBarMenu.style.display = "none";
 }

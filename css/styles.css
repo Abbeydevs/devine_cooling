@@ -117,15 +117,23 @@ div.mynav .btn:hover {
 
 
 #sidebar-closeIcon  {
-    font-size: 1.5rem;
-    position: relative;
-    left: 25rem;
+    font-size: 1.8rem;
+    position: fixed;
+    top: 2rem;
+    left: 45rem;
     padding: 2rem;
     cursor: pointer;
 }
 
+#side-bar .side-bar-links {
+    margin: 10rem auto;
+}
+
 #side-bar .side-bar-links li {
-    padding: 1.4rem 0;
+    margin: 3rem auto;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
 }
 
 #side-bar .side-bar-links li a{
@@ -137,8 +145,10 @@ div.mynav .btn:hover {
 }
 
 #side-bar .side-bar-links button {
-    width: 20%;
-    padding: 0.7rem 0;
+    margin: 2rem auto;
+    font-size: 2rem;
+    width: 30%;
+    padding: 1rem 0;
     background-color: #3FCDFB;
     font-weight: 700;
 }
@@ -146,11 +156,12 @@ div.mynav .btn:hover {
 
 /* Hero */
 #hero   {
-    padding: 8rem 4rem;
+    padding: 10rem 4rem;
 }
 
 #hero .contents {
-    margin: 6rem 0;
+    width: 50%;
+    margin: 2rem 0;
     padding: 0rem 2rem;
 }
 
@@ -181,7 +192,10 @@ div.mynav .btn:hover {
 }
 
 .form-container {
-    width: 80%;
+    position: absolute;
+    top: 12rem;
+    left: 45rem;
+    width: 40%;
     background-color: #F6F6F6;
     border-radius: 10px;
     padding: 2rem;
@@ -503,17 +517,23 @@ footer img  {
 }
 
 #footer {
+    background-color: rgb(43, 43, 43);
     padding: 4rem;
+    color: #fff;
 }
 
 .footer-txts    {
+    width: 70%;
     font-size: 1.5rem;
-    color: #080240;
     font-weight: 600;
 }
 
-.comp-container ul, .prod-container ul{
-    padding: 0.5rem;
+.comp-container, .prod-container {
+    margin-top: 3rem;
+}
+
+.comp-container h3, .prod-container h3 {   
+    color: #fff;
 }
 
 .comp-container ul li, .prod-container ul li {
@@ -521,7 +541,7 @@ footer img  {
 }
 
 .comp-container ul li a, .prod-container ul li a {
-    color: #080240;
+    color: #fff;
 }
 
 .copyright  {
@@ -733,7 +753,7 @@ h1.prod-title {
     font-weight: 600;
     width: 100%;
     padding: 1rem;
-    background-color: #080240;
+    background-color: #080240;  
     box-shadow: 1px 1px 20px #080240;
 }
 
