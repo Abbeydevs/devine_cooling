@@ -241,20 +241,6 @@
     .subscribe form {
         padding: 1rem 0;
     }
-    
-    .subscribe form input {
-        margin: 1rem 0;
-        width: 100%;
-        padding: 0.3rem 1rem;
-    }
-    
-    .subscribe form button {
-        text-align: center;
-        background-color: #080240;
-        color: #F6F6F6;
-        width: 100%;
-        padding: 0.7rem 1rem;
-    }
 }
 
 @media screen and (max-width: 560px) {
