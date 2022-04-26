@@ -733,6 +733,7 @@ h1.prod-title {
     font-weight: 600;
     width: 100%;
     padding: 1rem;
+    background-color: #080240;
     box-shadow: 1px 1px 20px #080240;
 }
 
