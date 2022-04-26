@@ -16,6 +16,10 @@ h1, h2, h3 {
     color: #080240;
 }
 
+.container-fluid    {
+    max-width: 100%;
+}
+
 
 .banner {
     width: 100%;
@@ -411,6 +415,7 @@ div.mynav .btn:hover {
     background-color: #fff;
     border-radius: 5px;
     padding: 5rem;
+    width: 100%;
 }
 
 #first-slide-modal .fsm-bg img {
@@ -549,6 +554,7 @@ footer img  {
     margin: 3rem 0 0;
     text-align: left;
     width: 30%;
+    color: #aaa;
 }
 
 

@@ -22,157 +22,154 @@
 </head>
 
 <body>
-    <!-- This is the header -->
-    <header class="banner">
-        <div class="overlay">
+    <div class="container-fluid">
+        <!-- This is the header -->
+        <header class="banner">
+            <div class="overlay">
 
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <a class="navbar-brand" href="quote-req.html">
-                    <img src="images/logo.png" alt="Devine Cooling company logo">
-                </a>
-                
-                <!-- Open SIdebar Icon -->
-                <i class="fa-solid fa-bars" id="sidebar-openIcon" onclick="openSideBar();"></i>
-                <div class="mynav collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://devinecooling.netlify.app/">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://devinecooling.netlify.app/products.html">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://devinecooling.netlify.app/services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://devinecooling.netlify.app/about.html">About us</a>
-                        </li>
-                        <a href="quote-req.html"><button class="btn">Book Us</button></a>
-                    </ul> 
-                </div>
-            </nav>
+                <nav class="navbar navbar-expand-lg fixed-top">
+                    <a class="navbar-brand" href="quote-req.html">
+                        <img src="images/logo.png" alt="Devine Cooling company logo">
+                    </a>
 
-            <div id="hero">
-                <div class="">
-                    <div class="contents" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="2000">
-                        <p class="hero-title">Invest in <strong>Cold room</strong> business with <strong>Devine Cooling.</strong></p>
-                        <p class="hero-paragraph">We are Devine Cooling. We build Cooling machines and install them for cold-room businesses. We also give
-                            advice on how to manage a cold room business effectively. At Devine Cooling, customer satisfaction is our
-                            top priority.</p>
-                        <a href="quote-req.html"><button type="button" class="btn">Book for Consultation</button></a>
+                    <!-- Open SIdebar Icon -->
+                    <i class="fa-solid fa-bars" id="sidebar-openIcon" onclick="openSideBar();"></i>
+                    <div class="mynav collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://devinecooling.netlify.app/">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://devinecooling.netlify.app/products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://devinecooling.netlify.app/services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://devinecooling.netlify.app/about.html">About us</a>
+                            </li>
+                            <a href="quote-req.html"><button class="btn">Book Us</button></a>
+                        </ul>
                     </div>
+                </nav>
 
-                    <div class="form-container">
-                        <h3 class="form-title">Request a Quote</h3>
-                        <form class="hero-form" action="https://formspree.io/f/mlezlgyj" method="POST">
-                            <div class="couple">
-                                <input class="fname" type="text" name="fname" placeholder="First name" required>
-                                <input type="text" name="lname" placeholder="Last name" required>
-                            </div>
-                            <div class="couple coup-2">
-                                <input class="lname" type="email" name="email" placeholder="Email address" required>
-                                <input type="tel" name="phone" placeholder="Your phone number" required>
-                            </div>
-                            <select name="products" id="products" required>
-                                <option value="Choose products/Services" selected disabled>Choose products/Services
-                                </option>
-                                <option value="Consultation">Consultation</option>
-                                <option value="Sales">Sales</option>
-                                <option value="Insatallation">Insatallation</option>
-                                <option value="Design-needs">Design needs</option>
-                            </select>
-                            <input class="subject" type="text" name="subject" placeholder="Subject" required>
-                            <textarea class="text-area" name="form-message" id="message-area" cols="45" rows="5"
-                                placeholder="Message" required></textarea>
-                            <button type="submit" class="btn">Send</button></a>
-                        </form>
+                <div id="hero">
+                    <div class="">
+                        <div class="contents" data-aos="fade-right" data-aos-easing="ease-in-sine"
+                            data-aos-duration="2000">
+                            <p class="hero-title">Invest in <strong>Cold room</strong> business with <strong>Devine
+                                    Cooling.</strong></p>
+                            <p class="hero-paragraph">We are Devine Cooling. We build Cooling machines and install them
+                                for cold-room businesses. We also give
+                                advice on how to manage a cold room business effectively. At Devine Cooling, customer
+                                satisfaction is our
+                                top priority.</p>
+                            <a href="quote-req.html"><button type="button" class="btn">Book for
+                                    Consultation</button></a>
+                        </div>
+
+                        <div class="form-container">
+                            <h3 class="form-title">Request a Quote</h3>
+                            <form class="hero-form" action="https://formspree.io/f/mlezlgyj" method="POST">
+                                <div class="couple">
+                                    <input class="fname" type="text" name="fname" placeholder="First name" required>
+                                    <input type="text" name="lname" placeholder="Last name" required>
+                                </div>
+                                <div class="couple coup-2">
+                                    <input class="lname" type="email" name="email" placeholder="Email address" required>
+                                    <input type="tel" name="phone" placeholder="Your phone number" required>
+                                </div>
+                                <select name="products" id="products" required>
+                                    <option value="Choose products/Services" selected disabled>Choose products/Services
+                                    </option>
+                                    <option value="Consultation">Consultation</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Insatallation">Insatallation</option>
+                                    <option value="Design-needs">Design needs</option>
+                                </select>
+                                <input class="subject" type="text" name="subject" placeholder="Subject" required>
+                                <textarea class="text-area" name="form-message" id="message-area" cols="45" rows="5"
+                                    placeholder="Message" required></textarea>
+                                <button type="submit" class="btn">Send</button></a>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-    </header>
+        </header>
 
-
-    <!-- SIDE BAR -->
-    <section id="side-bar">
-        <i class="fa-solid fa-xmark" id="sidebar-closeIcon" onclick="closeSideBar()"></i>
-        <div class="side-bar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-            <a href="#"><button type="button" class="btn">Book now</button></a>
-        </div>
-    </section>
-
-    <!-- <section id="vid-container">
-        <div class="row">
-            <div class="vid-left col-lg-6">
-                <video controls autoplay muted>
-                    <source src="video/vid.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video>
+        <!-- SIDE BAR -->
+        <section id="side-bar">
+            <i class="fa-solid fa-xmark" id="sidebar-closeIcon" onclick="closeSideBar()"></i>
+            <div class="side-bar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <a href="#"><button type="button" class="btn">Book now</button></a>
             </div>
-            <div class="sec-container col-lg-6">
-            </div>
-        </div>
-    </section> -->
+        </section>
 
-
-    <!-- Service section -->
-    <section id="service">
-        <h1 class="service-title">Services</h1>
-        <div class="row service-col">
-            <div class="sale col-lg-4 col-md-6 col-sm-12">
-                <div class="s-container" data-aos="fade-up" data-aos-duration="1000">
-                    <h3>Sales</h3>
-                    <p>We sell and build machines for cold room business. If you are looking into investing in the cold
-                        room business or you want to process birds such as; Chicken, Turkey etc, We are the right plug for
-                        sales and building of machines.</p>
-                    <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
+        <!-- Service section -->
+        <section id="service">
+            <h1 class="service-title">Services</h1>
+            <div class="row service-col">
+                <div class="sale col-lg-4 col-md-6 col-sm-12">
+                    <div class="s-container" data-aos="fade-up" data-aos-duration="1000">
+                        <h3>Sales</h3>
+                        <p>We sell and build machines for cold room business. If you are looking into investing in the
+                            cold
+                            room business or you want to process birds such as; Chicken, Turkey etc, We are the right
+                            plug
+                            for
+                            sales and building of machines.</p>
+                        <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
+                    </div>
+                </div>
+                <div class="install col-lg-4 col-md-6 col-sm-12">
+                    <div class="i-container" data-aos="fade-up" data-aos-duration="3000">
+                        <h3>Installation</h3>
+                        <p>We can help you install your machines or if you want us to help build and install, We are the
+                            plug.
+                            It does not matter your type of cold-room business, storage of sea foods such as; fishes,
+                            snails,
+                            prawns or even fresh meat, We will get it done.</p>
+                        <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
+                    </div>
+                </div>
+                <div class="consultancy col-lg-4 col-md-6 col-sm-12">
+                    <div class="c-container" data-aos="fade-up" data-aos-duration="3000">
+                        <h3>Consultancy</h3>
+                        <p>At Devine Cooling, we are concerned about the success of our esteemed clients/customers. We
+                            offer
+                            the
+                            best consultancy advice when it comes to your choice of machine for your various businesses.
+                        </p>
+                        <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
+                    </div>
+                </div>
+                <div class="design col-lg-4 col-md-6 col-sm-12">
+                    <div class="d-container" data-aos="fade-up" data-aos-duration="2000">
+                        <h3>Design</h3>
+                        <p>At Devine Cooling, we are concerned about the success of our esteemed clients/customers. We
+                            offer
+                            the
+                            best consultancy advice when it comes to your choice of machine for your various businesses.
+                        </p>
+                        <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="install col-lg-4 col-md-6 col-sm-12">
-                <div class="i-container" data-aos="fade-up" data-aos-duration="3000">
-                    <h3>Installation</h3>
-                    <p>We can help you install your machines or if you want us to help build and install, We are the
-                        plug.
-                        It does not matter your type of cold-room business, storage of sea foods such as; fishes,
-                        snails,
-                        prawns or even fresh meat, We will get it done.</p>
-                    <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
-                </div>
-            </div>
-            <div class="consultancy col-lg-4 col-md-6 col-sm-12">
-                <div class="c-container" data-aos="fade-up" data-aos-duration="3000">
-                    <h3>Consultancy</h3>
-                    <p>At Devine Cooling, we are concerned about the success of our esteemed clients/customers. We offer
-                        the
-                        best consultancy advice when it comes to your choice of machine for your various businesses.</p>
-                    <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
-                </div>
-            </div>
-            <div class="design col-lg-4 col-md-6 col-sm-12">
-                <div class="d-container" data-aos="fade-up" data-aos-duration="2000">
-                    <h3>Design</h3>
-                    <p>At Devine Cooling, we are concerned about the success of our esteemed clients/customers. We offer
-                        the
-                        best consultancy advice when it comes to your choice of machine for your various businesses.</p>
-                    <a href="quote-req.html"><button class="btn">Get a Quote</button></a>
-                </div>
-            </div>
-        </div>
-        <img src="images/service_illustration.png" alt="background image">
-    </section>
+            <img src="images/service_illustration.png" alt="background image">
+        </section>
 
-
-    <!-- Projects or Gallery -->
-    <section id="gallery">
+        <!-- Projects or Gallery -->
+        <section id="gallery">
             <!-- <h1>Projects</h1> -->
             <!-- Bootstrap Carousel for projects -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -184,25 +181,27 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" id="first-slide">
                         <h1 class="carousel-title">The Coldroom</h1>
-                            <div id="img-container1" onClick="openFirstModal()">
-                                <img class="d-block w-100 openModal" src="/images/projects/project-img1.png" alt="First slide">
-                            </div>
+                        <div id="img-container1" onClick="openFirstModal()">
+                            <img class="d-block w-100 openModal" src="/images/projects/project-img1.png"
+                                alt="First slide">
+                        </div>
                     </div>
 
                     <!-- Second slide -->
                     <div class="carousel-item" id="second-slide">
                         <h1 class="carousel-title">The Coldroom</h1>
-                            <div id="img-container2">
-                                <img  onClick="openFirstModal()" class="d-block w-100" src="/images/projects/project-img2.png" alt="Second slide">
-                            </div>
+                        <div id="img-container2">
+                            <img onClick="openFirstModal()" class="d-block w-100"
+                                src="/images/projects/project-img2.png" alt="Second slide">
+                        </div>
                     </div>
 
                     <!-- Third slide -->
                     <div class="carousel-item" id="third-slide">
                         <h1 class="carousel-title">The Coldroom</h1>
-                            <div id="img-container3">
-                                <img class="d-block w-100" src="/images/projects/project-img3.png" alt="third slide">
-                            </div>
+                        <div id="img-container3">
+                            <img class="d-block w-100" src="/images/projects/project-img3.png" alt="third slide">
+                        </div>
                     </div>
                 </div>
 
@@ -216,159 +215,167 @@
                 </a>
             </div>
 
-    </section>
+        </section>
 
-    <!-- The first slide Modal -->
-    <section id="first-slide-modal">
-        <i class="fa-solid fa-xmark" id="fsm-modal-close" onClick="closeFirstModal()"></i>
-        <div class="fsm-bg">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" id="first-slide">
-                        <!-- <h1 class="carousel-title">The Coldroom</h1> -->
+        <!-- The first slide Modal -->
+        <section id="first-slide-modal">
+            <i class="fa-solid fa-xmark" id="fsm-modal-close" onClick="closeFirstModal()"></i>
+            <div class="fsm-bg">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="first-slide">
+                            <!-- <h1 class="carousel-title">The Coldroom</h1> -->
                             <div class="img-container2">
                                 <img class="d-block w-100" src="/images/projects/project-img1.png" alt="second slide">
                             </div>
-                    </div>
+                        </div>
 
-                    <!-- Second slide -->
-                    <div class="carousel-item" id="second-slide">
-                        <!-- <h1 class="carousel-title">The Coldroom</h1> -->
+                        <!-- Second slide -->
+                        <div class="carousel-item" id="second-slide">
+                            <!-- <h1 class="carousel-title">The Coldroom</h1> -->
                             <div class="img-container1">
                                 <img class="d-block w-100" src="/images/projects/project-img2.png" alt="First slide">
                             </div>
-                    </div>
+                        </div>
 
-                    <!-- Third slide -->
-                    <div class="carousel-item" id="third-slide">
-                        <!-- <h1 class="carousel-title">The Coldroom</h1> -->
+                        <!-- Third slide -->
+                        <div class="carousel-item" id="third-slide">
+                            <!-- <h1 class="carousel-title">The Coldroom</h1> -->
                             <div class="img-container1">
                                 <img class="d-block w-100" src="/images/projects/project-img3.png" alt="First slide">
                             </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="fsm-texts">
+                    <div class="fsm-texts-title">
+                        <h3>Alpa Project</h3>
+                        <p>Lagos, 2010</p>
+                    </div>
+                    <div class="fsm-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis
+                            culpa
+                            quidem
+                            suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis
+                            aspernatur
+                            velit voluptatum ea tempora.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis
+                            culpa
+                            quidem
+                            suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis
+                            aspernatur
+                            velit voluptatum ea tempora.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis
+                            culpa
+                            quidem
+                            suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis
+                            aspernatur
+                            velit voluptatum ea tempora.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis
+                            culpa
+                            quidem
+                            suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis
+                            aspernatur
+                            velit voluptatum ea tempora.
+                        </p>
+                        <p><strong>Project Supervisor: Devine Cooling</strong></p>
+
                     </div>
                 </div>
-<!-- 
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a> 
-            
--->
-
-
             </div>
-            <div class="fsm-texts">
-                <div class="fsm-texts-title">
-                    <h3>Alpa Project</h3>
-                    <p>Lagos, 2010</p>
+        </section>
+
+        <!-- About us Section -->
+        <section id="about_us">
+            <div class="row">
+                <div class="left-container col-lg-7 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
+                    <h1>About Us</h1>
+                    <p>We are Devine Cooling. We build Cooling machines and install them for cold-room businesses. We also
+                        give advice on how to manage a cold room business effectively. At Devine Cooling, customer
+                        satisfaction is our top priority. </p>
+                    <button class="btn">Learn more</button>
                 </div>
-                <div class="fsm-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
-                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
-                        velit voluptatum ea tempora.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
-                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
-                        velit voluptatum ea tempora.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
-                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
-                        velit voluptatum ea tempora.
+                <div class="right-container col-lg-5 col-md-6 col-sm-12" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="images/abt-img.png" alt="">
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="row">
+                <div class="get_in_touch col-lg-7 col-md-6 col-sm-12">
+                    <h1>Get in touch</h1>
+                    <p><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; John doe str, Lekki phase 1, Lagos, Nigeria
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis perferendis nobis culpa quidem 
-                        suscipit animi earum cum! Quibusdam nesciunt atque repellendus laudantium neque, blanditiis aspernatur 
-                        velit voluptatum ea tempora.
-                    </p>
-                    <p><strong>Project Supervisor: Devine Cooling</strong></p>
-        
+                    <p><i class="fa-solid fa-envelope"></i> <a href="#"> &nbsp;&nbsp; info@devinecooling.com.ng</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="#"> &nbsp;&nbsp; +2347010111213</a></p>
+                    <p><i class="fa-solid fa-repeat"></i> &nbsp;&nbsp; 9:00am - 6:00am</p>
+                </div>
+                <div class="subscribe col-lg-5 col-md-6 col-sm-12">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Subscribe to get updates on our products and sales. We will not send you updates you don’t subscribe
+                        for.</p>
+                    <form action="" method="POST">
+                        <input type="email" name="email" id="subscribe" placeholder="Your email address">
+                        <button class="btn">Subscribe</button>
+                    </form>
+                    <p>Our Customer’s satisfaction is our priority</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About us Section -->
-    <section id="about_us">
-        <div class="row">
-            <div class="left-container col-lg-7 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-duration="3000">
-                <h1>About Us</h1>
-                <p>We are Devine Cooling. We build Cooling machines and install them for cold-room businesses. We also
-                    give advice on how to manage a cold room business effectively. At Devine Cooling, customer
-                    satisfaction is our top priority. </p>
-                <button class="btn">Learn more</button>
-            </div>
-            <div class="right-container col-lg-5 col-md-6 col-sm-12"data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <img src="images/abt-img.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="row">
-            <div class="get_in_touch col-lg-7 col-md-6 col-sm-12">
-                <h1>Get in touch</h1>
-                <p><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; John doe str, Lekki phase 1, Lagos, Nigeria
-                </p>
-                <p><i class="fa-solid fa-envelope"></i> <a href="#"> &nbsp;&nbsp; info@devinecooling.com.ng</a></p>
-                <p><i class="fa-solid fa-phone"></i> <a href="#"> &nbsp;&nbsp; +2347010111213</a></p>
-                <p><i class="fa-solid fa-repeat"></i> &nbsp;&nbsp; 9:00am - 6:00am</p>
-            </div>
-            <div class="subscribe col-lg-5 col-md-6 col-sm-12">
-                <h3>Subscribe to our Newsletter</h3>
-                <p>Subscribe to get updates on our products and sales. We will not send you updates you don’t subscribe
-                    for.</p>
-                <form action="" method="POST">
-                    <input type="email" name="email" id="subscribe" placeholder="Your email address">
-                    <button class="btn">Subscribe</button>
-                </form>
-                <p>Our Customer’s satisfaction is our priority</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="footer">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Company Logo">
+        </section>
+    
+        <!-- Footer Section -->
+        <footer id="footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Company Logo">
+                    </div>
+                    <div class="footer-txts">
+                        <p>Devine Cooling. We build Cooling machines and install them for cold-room businesses.</p>
+                    </div>
                 </div>
-                <div class="footer-txts">
-                    <p>Devine Cooling. We build Cooling machines and install them for cold-room businesses.</p>
+    
+                <div class="comp-container col-lg-3">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="prod-container col-lg-3">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="">Installation</a></li>
+                        <li><a href="">Chiller</a></li>
+                        <li><a href="">Cold room</a></li>
+                        <li><a href="">Blast Freezer</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="comp-container col-lg-3">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
+    
+            <div class="copyright">
+                <p>&copy; 2022 copyright. All rights reserved. <strong>Devinecooling.com.ng. </strong>Website Designed by <a
+                        href=#>Abbeydev</a></p>
             </div>
+        </footer>
 
-            <div class="prod-container col-lg-3">
-                <h3>Product</h3>
-                <ul>
-                    <li><a href="">Installation</a></li>
-                    <li><a href="">Chiller</a></li>
-                    <li><a href="">Cold room</a></li>
-                    <li><a href="">Blast Freezer</a></li>
-                </ul>
-            </div>
-        </div>
+    </div>
 
-        <div class="copyright">
-            <p>&copy; 2022 copyright. All rights reserved. <strong>Devinecooling.com.ng. </strong>Website Designed by <a
-                    href=#>Abbeydev</a></p>
-        </div>
-    </footer>
 
 
 

@@ -241,6 +241,10 @@
     .subscribe form {
         padding: 1rem 0;
     }
+
+    .comp-container, .prod-container {
+        margin-top: 0rem;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -331,19 +335,82 @@
 
     .copyright  {
         margin: 3rem 0 0;
-        width: 50%;
+        width: 90%;
+        color: #aaa;
     }
 }
 
 @media screen and (max-width: 420px) {
 
-    .form-container {
-        width: 80%;
-        margin: 2rem auto;
+    header nav a img  {
+        width: 60px;
+        padding-left: 1.5rem;
     }
 
-    #service img   {
-        right: 15rem;
-        top: 95rem;
-    }   
+    #sidebar-openIcon   {
+        top: 0.3rem;
+        right: 6rem;
+    }
+
+    #service  {
+        padding: 2rem;
+    }
+
+    #gallery    {
+        padding: 0;
+    }
+
+    #gallery .carousel {
+        padding: 50px;
+    }
+
+    #gallery #first-slide h1.carousel-title,
+    #gallery #second-slide h1.carousel-title,
+    #gallery #third-slide h1.carousel-title {
+        font-size: 1rem;
+        top: 45%;
+    }
+
+    #first-slide-modal {
+        padding: 7rem 5rem;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #first-slide-modal .fsm-bg {
+        padding: 2rem;
+        margin: auto;
+    }
+
+    #first-slide-modal .fsm-texts  {
+       /* font-size: 0; */
+    }
+
+    #first-slide-modal .fsm-texts .fsm-texts-title {
+        /* font-size: 0; */
+    }
+
+    #fsm-modal-close {
+        color: #fff;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #about_us   {
+        padding: 6rem 2rem;
+        background-color: #9AE6FF;
+    }
+
+    #about_us .right-container {
+        width: 90%;
+    }
+
+    .subscribe  {
+        margin: 4rem auto;
+        max-width: 93%;
+    }
 }
+   
