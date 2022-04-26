@@ -197,7 +197,11 @@
 
 @media screen and (max-width: 780px) {
     nav.navbar {
-        padding: 0 3rem;
+        padding: 0 1rem;
+    }
+
+    #sidebar-closeIcon  {
+        left: 40rem;
     }
 
     #hero .contents {
@@ -208,9 +212,48 @@
         margin: 2rem auto;
     }
 
-    #service img   {
-        right: 25rem;
-        top: 85rem;
+    #gallery    {
+        background-color: #eee;
+        padding: 1rem 2rem;
+    }
+
+    #gallery #first-slide h1.carousel-title,
+    #gallery #second-slide h1.carousel-title,
+    #gallery #third-slide h1.carousel-title {
+        /* font-size: 2rem; */
+        top: 40%;
+        left: 27%;
+    }
+
+    .subscribe  {
+        padding: 2rem;
+        margin-left: 3rem;
+    }
+
+    .subscribe h3 {
+        font-size: 1.2rem;
+    }
+
+    .subscribe p {
+        font-size: 0.7rem;
+    }
+    
+    .subscribe form {
+        padding: 1rem 0;
+    }
+    
+    .subscribe form input {
+        margin: 1rem 0;
+        width: 100%;
+        padding: 0.3rem 1rem;
+    }
+    
+    .subscribe form button {
+        text-align: center;
+        background-color: #080240;
+        color: #F6F6F6;
+        width: 100%;
+        padding: 0.7rem 1rem;
     }
 }
 
